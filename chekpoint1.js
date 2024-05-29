@@ -40,3 +40,29 @@ var isSquare = function(n){
   const sqrt = Math.sqrt(n);
   return Number.isInteger(sqrt);
 }
+
+////////////////////////////////////Disemvowel Trolls/////////////////////////////////
+function disemvowel(str) {
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  let result = '';
+
+  for (const char of str) {
+    if (!vowels.includes(char)) {
+      result += char;
+    }
+  }
+
+  return result;
+}
+
+/////////////////////////////////Highest and Lowest/////////////////////////////////
+function highAndLow(numbers){
+  const numArray = numbers.split(' ').map(Number);
+  const max = Math.max(...numArray);
+  const min = Math.min(...numArray);
+  return `${max} ${min}`;
+  
+  }
+
+
+/////////////////////////////////
